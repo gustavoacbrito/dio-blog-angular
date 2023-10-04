@@ -8,6 +8,9 @@
   align-items: center;
   font-family: 'Patua One', cursive;
 }
+.description{
+  text-align: center;
+}
 .title{
   text-shadow: 2px 2px 4px rgba(0,0,0,1);
   font-size:5rem;
@@ -20,11 +23,12 @@
   }
 }
 hr{
-  width: 80vw;
+  margin: 0 auto;
+  width: 90vw;
   height: 30px;
   border-style: solid;
-  border-color: black;
-  border-width: 1px 0 0 0;
+  border-color: white;
+  border-width: 2px 0 0 0;
   border-radius: 20px;
 }
 hr:before {
@@ -33,8 +37,8 @@ hr:before {
   height: 30px;
   margin-top: -31px;
   border-style: solid;
-  border-color: black;
-  border-width: 0 0 1px 0;
+  border-color: white;
+  border-width: 0 0 2px 0;
   border-radius: 20px;
 }
 

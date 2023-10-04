@@ -1,0 +1,32 @@
+<mat-toolbar color="primary">
+  <button (click)="drawer.toggle();" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>GustavoBrito</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>
+  <mat-drawer-container class="mat-sidenav-container">
+    <mat-drawer #drawer mode="over">
+      <mat-nav-list  class="mat-nav-list">
+        <a style="color:#0a66c2;"  href="https://www.linkedin.com/in/gustavoafonsobrito/">
+          <fa-icon style="color: #0a66c2" [icon]="faLinkedin"></fa-icon>
+          Linkedin
+        </a>
+        <a style="color: rebeccapurple" href="https://github.com/gustavoacbrito">
+          <fa-icon style="color: black" [icon]="faGithub"></fa-icon>
+          GitHub
+        </a>
+      </mat-nav-list>
+    </mat-drawer>
+    <mat-drawer-content>
+      <div>
+        <router-outlet></router-outlet>
+      </div>
+    </mat-drawer-content>
+  </mat-drawer-container>

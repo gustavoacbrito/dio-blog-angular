@@ -1,33 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {MenuBarComponent} from "./menu-bar/menu-bar.component";
-import {MenuTitleComponent} from "./menu-title/menu-title.component";
-import {BigCardComponent} from "./big-card/big-card.component";
-import {SmallCardComponent} from "./small-card/small-card.component";
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatIconModule} from "@angular/material/icon";
-import { MatButtonModule } from "@angular/material/button"
+import {ComponentsModule} from "./components/components.module";
+import {RouterOutlet} from "@angular/router";
+
 
 @NgModule({
-  declarations: [
-    MenuBarComponent,
-    MenuTitleComponent,
-    BigCardComponent,
-    SmallCardComponent
-  ],
-  imports: [
-    BrowserModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule
-  ],
+  declarations: [],
+    imports: [
+        BrowserModule,
+        ComponentsModule,
+        RouterOutlet,
+    ],
   providers: [],
   exports: [
-    BigCardComponent,
-    MenuBarComponent,
-    MenuTitleComponent,
-    SmallCardComponent,
+    ComponentsModule
   ],
   bootstrap: []
 })
-export class PageModule{ }
+export class PageModule{
+
+}
